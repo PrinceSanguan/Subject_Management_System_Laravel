@@ -1,9 +1,8 @@
 * {
-    font-family: 'Roboto' serif;
+    font-family: "Roboto" serif;
     padding: 0;
     margin: 0;
 }
-
 
 /*body*/
 
@@ -16,7 +15,6 @@ body {
     background-color: #f5f5f5;
 }
 
-
 /*main*/
 
 main {
@@ -26,7 +24,6 @@ main {
     justify-content: center;
 }
 
-
 /*TUPC LOGO*/
 
 img.mb4 {
@@ -34,16 +31,14 @@ img.mb4 {
     margin-bottom: 10px;
 }
 
-
 /*"signup your account"*/
 
 .create {
     width: 100%;
     font-weight: bold;
     font-size: 23px;
-    color: #E2435E;
+    color: #e2435e;
 }
-
 
 /*"To manage your subjects and schedule all in one place"*/
 
@@ -65,8 +60,8 @@ form {
 input.signup {
     width: 100%;
     height: 59px;
-    background: #E2435E;
-    color: #FFFFFF;
+    background: #e2435e;
+    color: #ffffff;
     cursor: pointer;
     font-size: 23px;
     font-weight: 500;
@@ -74,7 +69,7 @@ input.signup {
     margin-bottom: 10px;
     border: none;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .signup:hover {
@@ -82,7 +77,7 @@ input.signup {
 }
 
 .signup:focus {
-    background: #E2435E;
+    background: #e2435e;
 }
 
 h2.loginlabel {
@@ -99,24 +94,21 @@ label {
 }
 
 a.loginlabel {
-    color: #E2435E;
+    color: #e2435e;
     text-decoration: none;
     font-weight: normal;
     font-size: 23px;
 }
 
-
 /*MEDIA QUERY*/
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width: 1200px) {
     h2.loginlabel {
         justify-self: center;
     }
 }
 
-
 /*forms*/
-
 
 /*fullname, surname, student number, year and section lagayan nila*/
 
@@ -127,13 +119,11 @@ a.loginlabel {
     width: 100%;
 }
 
-
 /*dropdown year and section kasama label*/
 
 .form-group2a {
     display: grid;
 }
-
 
 /*mga box mismo ng fullname, surname, student number, year and section*/
 
@@ -144,7 +134,6 @@ a.loginlabel {
     width: 100%;
 }
 
-
 /*pinakaloob ng fullname, surname, student number, year and section*/
 
 .form-group1 input,
@@ -153,9 +142,9 @@ a.loginlabel {
 .form-group2a select,
 .form-control {
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     height: 50px;
-    border: 1px solid #CED4DA;
+    border: 1px solid #ced4da;
     font-weight: 300;
     font-size: 18px;
     border-radius: 10px;
@@ -167,7 +156,6 @@ a.loginlabel {
 .form-control:focus {
     box-shadow: none;
 }
-
 
 /*/*dropdown year and section lang*/
 

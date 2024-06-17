@@ -56,11 +56,11 @@
 
     <form name="login_form" action="">
         <img class="mb4" src="{{asset('images/tuplogo.png')}}" alt="tuplogo" width="100" height="100">
-        <h1 class="loglabel">LOG IN YOUR ACCOUNT</h1>
-        <h1 class="manage">To manage your subjects and schedule all in one place</h1>
+        <h1 class="loglabel">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES-CAVITE CAMPUS</h1>
+        <h1 class="manage">ADDING, DROPPING and TRANSFERRING the SUBJECT all in one place</h1>
         <div class="ematpass">
             <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" required>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Username or Email" required>
             </div>
 
             <div class="form-group password-wrapper">
@@ -73,9 +73,10 @@
             <a href="forgot-password.html">Forgot Password?</a>
         </div>
         
-        <input class="login" type="submit" value="Log in">
-        <h2 class="signuplabel">Don't have an account? <a class="signuplabel" href="{{route('signup')}}">SIGN UP</a> here.</h2>
+        <input class="login" type="submit" value="LOG IN">
+        <input id="signupButton" class="signup" type="button" value="SIGN UP">
     </form>
+    
 
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -93,6 +94,13 @@
             // Toggle the eye slash icon
             this.classList.toggle('fa-eye-slash');
         });
+    </script>
+
+    <script>
+        document.getElementById('signupButton').onclick = function() {
+            // Redirect to the signup route
+            window.location.href = '/signup'; // Replace '/signup' with your actual signup route
+        };
     </script>
 
 </body>
