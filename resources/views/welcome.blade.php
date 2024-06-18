@@ -60,7 +60,7 @@
         <h1 class="manage">ADDING, DROPPING and TRANSFERRING the SUBJECT all in one place</h1>
         <div class="ematpass">
             <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Username or Email" required>
+                <input type="email" class="form-control" id="email" placeholder="Username or Email" required>
             </div>
 
             <div class="form-group password-wrapper">
