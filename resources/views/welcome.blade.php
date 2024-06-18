@@ -60,11 +60,11 @@
         <h1 class="manage">ADDING, DROPPING and TRANSFERRING the SUBJECT all in one place</h1>
         <div class="ematpass">
             <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Username or Email" required>
+                <input type="email" class="form-control" placeholder="Username or Email" required>
             </div>
 
             <div class="form-group password-wrapper">
-                <input type="password" class="form-control" id="password" minlength="5" placeholder="Password" required>
+                <input type="password" class="form-control" minlength="5" placeholder="Password" required>
                 <i class="fas fa-eye" id="togglePassword"></i>
             </div>
         </div>
@@ -82,6 +82,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="{{asset('js/functions.js')}}"></script>
+    
     <script>
         const togglePassword = document.querySelector('#togglePassword');
         const password = document.querySelector('#password');

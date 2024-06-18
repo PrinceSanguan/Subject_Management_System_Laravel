@@ -33,23 +33,28 @@
         <h1 class="manage">ADDING, DROPPING and TRANSFERRING the SUBJECT all in one place</h1>
         <form name="signup_form" action="">
             <div class="formGroup1">
+
                 <div class="form-group1">
-                    <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp"
+                    <input type="text" class="form-control" name="firstName"
                         placeholder="First name" required>
                 </div>
+
                 <div class="form-group1a">
-                    <input type="text" class="form-control" id="surname" aria-describedby="emailHelp"
+                    <input type="text" class="form-control" name="lastName"
                         placeholder="Last name" required>
                 </div>
+
             </div>
 
             <div class="formGroup2">
+
                 <div class="form-group2">
-                    <input type="text" class="form-control" id="studentno1" aria-describedby="emailHelp"
+                    <input type="text" class="form-control" name="studentNumber"
                         placeholder="TUPC-XX-XXXX" required>
                 </div>
+
                 <div class="form-group2a">
-                    <select class="custom-select mr-sm-2" id="section0" required>
+                    <select class="custom-select mr-sm-2" name="section" required>
                         <option value="" disabled selected>Course</option>
                         <option value="BET-COET-NS-1B">BET-COET-NS-1B</option>
                         <option value="BET-COET-NS-2A">BET-COET-NS-2A</option>
@@ -60,14 +65,15 @@
                         <option value="BET-COET-NS-4B">BET-COET-NS-4B</option>
                     </select>
                 </div>
+
             </div>
 
             <div class="formGroup2">
                 <div class="form-group2">
-                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input type="email" class="form-control" placeholder="Email" name="email" required>
                 </div>
                 <div class="form-group2a">
-                    <select class="custom-select mr-sm-2" id="section0" required>
+                    <select class="custom-select mr-sm-2" name="yearAndSection" required>
                         <option value="" disabled selected>Year and Section</option>
                         <option value="BET-COET-NS-1B">BET-COET-NS-1B</option>
                         <option value="BET-COET-NS-2A">BET-COET-NS-2A</option>
@@ -82,19 +88,21 @@
 
             <div class="form-group" style="display: grid; row-gap: 10px;">
                 <div class="input-group">
-                    <input type="password" class="form-control" id="password1" placeholder="Password" minlength="5"
+                    <input type="password" class="form-control" placeholder="Password" minlength="6"
                         required>
                     <button type="button" class="btn btn-outline-secondary" id="togglePassword">
                         <i class="fas fa-eye"></i>
                     </button>
                 </div>
+
                 <div class="input-group">
-                    <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password"
-                        minlength="5" required>
+                    <input type="password" class="form-control" placeholder="Confirm Password"
+                        minlength="6" required>
                     <button type="button" class="btn btn-outline-secondary" id="toggleConfirmPassword">
                         <i class="fas fa-eye"></i>
                     </button>
                 </div>
+
             </div>
 
             <input class="signup" type="submit" value="SUBMIT">
