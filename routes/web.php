@@ -22,3 +22,6 @@ Route::get('/', [LoginController::class, 'index'])->name('login');
 Route::get('signup', [SignupController::class, 'index'])->name('signup');
 
 Route::get('student/profile', [StudentController::class, 'index'])->name('student.profile');
+Route::get('student/adding', [StudentController::class, 'adding'])->name('student.adding');
+Route::get('student/dropping', [StudentController::class, 'dropping'])->name('student.dropping');
+Route::get('student/transfer', [StudentController::class, 'transfer'])->name('student.transfer');

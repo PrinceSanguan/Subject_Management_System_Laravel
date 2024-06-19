@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:focus {
+    font-weight: bold;
+}
+
+
+/* navbar */
+
+#navbarnavbar {
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    background-color: #F8F9FB;
+    z-index: 100;
+    padding: 0 5% 0 5%;
+}
+
+.navbarLagayan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLagayan a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.lagayanNgButton {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+#logoutbutton {
+    background-color: #388465;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#logoutbutton:hover {
+    border: 1px solid #388465;
+    color: #388465;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.navbarLagayan button {
+    background-color: #388465;
+    color: white;
+    border: none;
+    justify-self: flex-end;
+}
+
+#adding,
+#dropping,
+#transferring,
+#dashboard,
+#account {
+    font-weight: bold;
+}
+
+.bg-container {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    background-image: url(../images/E8EFE5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 5% 2% 5%;
+}
+
+.welcome {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #388465;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    background-color: white;
+    margin-top: 2%;
+    padding: 20px 60px 20px 60px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+}
+
+.title {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+}
+
+.title p {
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.title button {
+    background-color: #388465;
+    border: 1px solid #388465;
+}
+
+.title input {
+    border: 1px solid #388465;
+}
+
+.table {
+    margin-top: 1%;
+}
+
+th {
+    font-size: 10px;
+}
+
+td {
+    font-size: 12px;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbarLagayan {
+        text-align: center;
+        align-items: center;
+    }
+    #navbarnavbar {
+        padding: 0 5% 0 5%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    #navbarToggleExternalContent {
+        background-color: #F8F9FB;
+        width: 100%;
+    }
+    #center {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 10% 10% 10% 10%;
+    }
+    .bg-container {
+        width: 100%;
+        padding: 2% 2% 2% 2%;
+    }
+    .bodybody {
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    #navbarToggleExternalContent {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+/*forms*/
+
+
+/*fullname, surname, student number, year and section lagayan nila*/
+
+.formGroup1,
+.formGroup2,
+.formGroup3,
+.formGroup4 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+
+/*dropdown year and section kasama label*/
+
+.form-group2a {
+    display: grid;
+}
+
+
+/*mga box mismo ng fullname, surname, student number, year and section*/
+
+.form-group1,
+.form-group1a,
+.form-group2,
+.form-group2a,
+.form-group3,
+.form-group3a,
+.form-group4,
+.form-group4a,
+.form-group4b,
+.form-group5,
+.form-group6,
+.form-group7 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#sub_button {
+    margin-top: 20px;
+    background-color: #388465;
+}
+
+
+/*pinakaloob ng fullname, surname, student number, year and section*/
+
+.form-group1 input,
+.form-group1a input,
+.form-group2 input,
+.form-group2a input,
+.form-control,
+.form-group3 select,
+.form-group3a select,
+.form-group4 input,
+.form-group4a input,
+.form-group4b input,
+.form-group5 input,
+.form-group6 input,
+.form-group7 input {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    border: 1px solid #CED4DA;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.form-group1 input:focus,
+.form-group1a input:focus,
+.form-group2 input:focus,
+.form-group2a input:focus,
+.form-control:focus,
+.form-group3 select:focus,
+.form-group3a select:focus,
+.form-group4 input:focus,
+.form-group4a input:focus,
+.form-group4b group4b:focus,
+.form-group5 input:focus,
+.form-group6 input:focus,
+.form-group7 input:focus {
+    box-shadow: none;
+}
+
+
+/*/*dropdown year and section lang*/
+
+.form-group2a select {
+    padding: 0 10px 0 10px;
+}
+
+.form-group1:before {
+    content: "First Name: (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group1a:before {
+    content: "Last Name: (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group2:before {
+    content: "Email: (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group2a:before {
+    content: "Username: (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group3:before {
+    content: "User Type: (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group3a:before {
+    content: "Department:";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group4:before {
+    content: "Course: Ex. BET-COET";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group4a:before {
+    content: "Year: Ex. 1";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group4b:before {
+    content: "Section: Ex. A";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group5:before {
+    content: "Student Number Format: TUPC-XX-XXXX";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group6:before {
+    content: "Password (Required) Format: TUPC-XX-XXXX";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.form-group7:before {
+    content: "Confirm Password (Required)";
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

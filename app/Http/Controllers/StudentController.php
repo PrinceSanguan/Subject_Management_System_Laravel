@@ -10,4 +10,19 @@ class StudentController extends Controller
     {
         return view ('student.profile');
     }
+
+    public function adding()
+    {
+        return view ('student.adding');
+    }
+
+    public function dropping()
+    {
+        return view ('student.dropping');
+    }
+
+    public function transfer()
+    {
+        return view ('student.transfer');
+    }
 }

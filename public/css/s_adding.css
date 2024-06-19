@@ -1,0 +1,974 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+   
+}
+
+a {
+    color: black;
+}
+
+a:focus {
+    font-weight: bold;
+}
+
+
+/* navbar */
+
+#navbarnavbar {
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0;
+    background-color: #F8F9FB;
+    z-index: 100;
+    padding: 0 10% 0 10%;
+}
+
+.navbarLagayan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbarLagayan a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.lagayanNgButton {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+#logoutbutton {
+    background-color: #E2435E;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#logoutbutton:hover {
+    border: 1px solid #E2435E;
+    color: #E2435E;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.navbarLagayan button {
+    background-color: #E2435E;
+    color: white;
+    border: none;
+    justify-self: flex-end;
+}
+
+#s_profile,
+#adding,
+#dropping,
+#transferring {
+    font-weight: bold;
+}
+
+
+/* katawan yung section */
+
+.bg-container {
+    width: 100%;
+    background-image: url(../images/F3D4D9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 5% 2% 5%;
+}
+
+
+/* main lagayan sa loob ng section - lagayan ng tatlong box */
+
+.bodybody {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* lagayan nung 2 box */
+
+.boxes {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* student Details at mga laman */
+
+.studentDetails {
+    background-color: #E2435E;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.innerStudentDetails {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* progress box at mga laman niya */
+
+.progressbox {
+    background-color: #F8F9FB;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+
+/* hati lang */
+
+.dividerLangs {
+    height: 20px;
+}
+
+
+/* yung lagayan ng adding ganon */
+
+.innerBody {
+    width: 100%;
+    min-height: 70vh;
+    border-radius: 5px;
+    background-color: #F8F9FB;
+    padding: 4% 4% 4% 4%;
+}
+
+
+/* mga text */
+
+.lagayan1,
+.lagayan2,
+.lagayan3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E2435E;
+}
+
+p {
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#p1 {
+    font-weight: 500;
+}
+
+.isapanglagayan,
+.lagayanNgStatus {
+    width: 100%;
+}
+
+.isapanglagayan {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.isapanglagayan #p1,
+.isapanglagayan p,
+.lagayanNgStatus #p1,
+.lagayanNgStatus p {
+    color: #E2435E;
+    width: 100%;
+}
+
+
+/*  Rejay's edit */
+
+.image-upload {
+    width: 100%;
+}
+
+.image-upload img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+
+/* footer */
+
+footer {
+    position: sticky;
+    background-color: white;
+    box-shadow: -1px -7px 16px -10px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 40px;
+    z-index: 100;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer button {
+    background-color: transparent;
+    border: none;
+}
+
+footer button img {
+    width: 20px;
+}
+
+#sched-up {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+}
+
+#sched-down {
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* lagayan ng data */
+
+#datadata {
+    display: none;
+    height: 400px;
+    width: 90%;
+    justify-self: center;
+}
+
+
+/* grades file yung upload ng file/pdf */
+
+#gradesfile {
+    border: 1px solid #E2435E;
+}
+
+.alert-link {
+    width: 80%;
+}
+
+.table {
+    margin-top: 1%;
+    width: 100%;
+}
+
+th {
+    font-size: 10px;
+}
+
+td {
+    font-size: 12px;
+    width: fit-content;
+}
+
+#button_s {
+    border: 1px solid #E2435E;
+    background-color: #E2435E;
+    color: white;
+}
+
+#button_s:hover {
+    border: 1px solid #E2435E;
+    color: #E2435E;
+    background-color: white;
+}
+
+
+/* pag maliit na ang screen */
+
+@media only screen and (max-width: 1000px) {
+    .navbarLagayan {
+        text-align: center;
+        align-items: center;
+    }
+    #navbarnavbar {
+        padding: 0 5% 0 5%;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    #navbarToggleExternalContent {
+        background-color: #F8F9FB;
+        width: 100%;
+    }
+    #center {
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 10% 10% 10% 10%;
+    }
+    .bg-container {
+        width: 100%;
+        padding: 2% 2% 2% 2%;
+    }
+    .bodybody {
+        width: 100%;
+    }
+    .boxes {
+        display: grid;
+        height: fit-content;
+    }
+    .studentDetails {
+        height: 150px;
+        width: 100%;
+    }
+    .progressbox {
+        height: 150px;
+        width: 100%;
+    }
+    .form-step {
+        padding: 0px;
+    }
+}
+
+
+/* Dagdag MULTI_FORM 11/17/22 */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+#multi-step-form-container {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #4361ee;
+    background-color: #4361ee;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    border: 1px solid #0e9594;
+    background-color: #0e9594;
+}
+
+.mt-3 {
+    margin-top: 2rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.form-step {
+    border: solid 1px #E2435E;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+ul.form-stepper {
+    counter-reset: section;
+    margin-bottom: 3rem;
+}
+
+ul.form-stepper .form-stepper-circle {
+    position: relative;
+}
+
+ul.form-stepper .form-stepper-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.form-stepper-horizontal {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+ul.form-stepper>li:not(:last-of-type) {
+    margin-bottom: 0.625rem;
+    -webkit-transition: margin-bottom 0.4s;
+    -o-transition: margin-bottom 0.4s;
+    transition: margin-bottom 0.4s;
+}
+
+.form-stepper-horizontal>li:not(:last-of-type) {
+    margin-bottom: 0 !important;
+}
+
+.form-stepper-horizontal li {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-stepper-horizontal li:not(:last-child):after {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 1px;
+    content: "";
+    top: 32%;
+}
+
+.form-stepper-horizontal li:after {
+    background-color: #dee2e6;
+}
+
+.form-stepper-horizontal li.form-stepper-completed:after {
+    background-color: #4da3ff;
+}
+
+.form-stepper-horizontal li:last-child {
+    flex: unset;
+}
+
+ul.form-stepper li a .form-stepper-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    line-height: 1.7rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle {
+    background-color: #4361ee !important;
+    color: #fff;
+}
+
+.form-stepper .form-stepper-active .label {
+    color: #4361ee !important;
+}
+
+.form-stepper .form-stepper-active .form-stepper-circle:hover {
+    background-color: #4361ee !important;
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-unfinished .form-stepper-circle {
+    background-color: #f8f7ff;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle {
+    background-color: #0e9594 !important;
+    color: #fff;
+}
+
+.form-stepper .form-stepper-completed .label {
+    color: #0e9594 !important;
+}
+
+.form-stepper .form-stepper-completed .form-stepper-circle:hover {
+    background-color: #0e9594 !important;
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-active span.text-muted {
+    color: #fff !important;
+}
+
+.form-stepper .form-stepper-completed span.text-muted {
+    color: #fff !important;
+}
+
+.form-stepper .label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.form-stepper a {
+    cursor: default;
+}
+
+#step1,
+#step2,
+#step3 {
+    display: grid;
+    width: 100%;
+}
+
+
+/* Rejay's Schedule Edit */
+
+.schedule-header {
+    background-color: #E2435E;
+    color: white;
+}
+
+.schedule-table {
+    width: 100%;
+}
+
+.schedule-rows td {
+    height: 100px;
+    margin: 50px;
+    padding: 50px;
+    background-color: white;
+    cursor: pointer;
+    border: solid 1px black;
+    pointer-events: none;
+}
+
+.schedule-rows td:first-child {
+    background-color: transparent;
+    text-align: right;
+    position: relative;
+    top: -12px;
+    border: solid 1px transparent;
+}
+
+.schedule-rows td[data-selected],
+.schedule-rows td[data-selecting] {
+    background-color: #E2435E;
+    border: none;
+}
+
+.schedule-rows td[data-disabled] {
+    opacity: 0.55;
+}
+
+
+/* Aspher's Schedule Edit */
+
+
+/**
+ * jQuery Schedule v2.2.0
+ * https://github.com/Yehzuna/jquery-schedule
+ * Thomas BORUSZEWSKI <yehzuna@outlook.com>
+ */
+
+.jqs-day-remove,
+.jqs-day-duplicate,
+.jqs-period-remove,
+.jqs-period-duplicate {
+    display: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    background-size: 100% 100%;
+}
+
+.jqs-day-remove,
+.jqs-period-remove {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yMi4yNDUsNC4wMTVjMC4zMTMsMC4zMTMsMC4zMTMsMC44MjYsMCwxLjEzOWwtNi4yNzYsNi4yN2MtMC4zMTMsMC4zMTItMC4zMTMsMC44MjYsMCwxLjE0bDYuMjczLDYuMjcyICBjMC4zMTMsMC4zMTMsMC4zMTMsMC44MjYsMCwxLjE0bC0yLjI4NSwyLjI3N2MtMC4zMTQsMC4zMTItMC44MjgsMC4zMTItMS4xNDIsMGwtNi4yNzEtNi4yNzFjLTAuMzEzLTAuMzEzLTAuODI4LTAuMzEzLTEuMTQxLDAgIGwtNi4yNzYsNi4yNjdjLTAuMzEzLDAuMzEzLTAuODI4LDAuMzEzLTEuMTQxLDBsLTIuMjgyLTIuMjhjLTAuMzEzLTAuMzEzLTAuMzEzLTAuODI2LDAtMS4xNGw2LjI3OC02LjI2OSAgYzAuMzEzLTAuMzEyLDAuMzEzLTAuODI2LDAtMS4xNEwxLjcwOSw1LjE0N2MtMC4zMTQtMC4zMTMtMC4zMTQtMC44MjcsMC0xLjE0bDIuMjg0LTIuMjc4QzQuMzA4LDEuNDE3LDQuODIxLDEuNDE3LDUuMTM1LDEuNzMgIEwxMS40MDUsOGMwLjMxNCwwLjMxNCwwLjgyOCwwLjMxNCwxLjE0MSwwLjAwMWw2LjI3Ni02LjI2N2MwLjMxMi0wLjMxMiwwLjgyNi0wLjMxMiwxLjE0MSwwTDIyLjI0NSw0LjAxNXoiLz48L3N2Zz4=");
+}
+
+.jqs-day-duplicate,
+.jqs-period-duplicate {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IjI5LDIxIDE4LDIxIDE4LDEwICAgIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjIiLz48cG9seWdvbiBmaWxsPSJub25lIiBwb2ludHM9IjMwLDQ5IDEsNDkgMSw5ICAgMTgsOSAzMCwyMSAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5bGluZSBmaWxsPSJub25lIiBwb2ludHM9IjQ4LDEzIDM3LDEzIDM3LDIgICAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPjxwb2x5Z29uIHBvaW50cz0iMzcuNDE0LDAgMTksMCAxOSw2IDIxLDggMjEsMiAzNi41ODYsMiA0OCwxMy40MTQgNDgsNDAgMzMsNDAgMzMsNDIgNTAsNDIgNTAsMTIuNTg2ICIvPjwvc3ZnPg==");
+}
+
+.jqs {
+    position: relative;
+    padding: 40px 20px 20px 60px;
+    overflow-y: scroll;
+    font-family: system, -apple-system, Roboto, Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+    box-sizing: border-box;
+}
+
+.jqs-mode-edit .jqs-period {
+    cursor: pointer;
+}
+
+.jqs-mode-edit .ui-draggable-dragging {
+    cursor: move;
+}
+
+.jqs-mode-5 .jqs-table td,
+.jqs-mode-5 .jqs-grid-day {
+    width: 20%;
+}
+
+.jqs-table {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: content-box;
+}
+
+.jqs-table td,
+.jqs-table th {
+    padding: 0;
+}
+
+.jqs-table td {
+    position: relative;
+    width: 14.28571%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.jqs-grid {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    right: 20px;
+    box-sizing: content-box;
+}
+
+.jqs-grid-head {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.jqs-grid-day {
+    position: relative;
+    width: 14.28571%;
+    padding: 8px 0 4px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.jqs-grid-day:hover .jqs-day-remove,
+.jqs-grid-day:hover .jqs-day-duplicate,
+.jqs-grid-day-buttons .jqs-day-remove,
+.jqs-grid-day-buttons .jqs-day-duplicate {
+    display: block;
+}
+
+.jqs-grid-line {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    height: 38px;
+    box-sizing: content-box;
+}
+
+.jqs-grid-line:last-child {
+    height: 0;
+    border-bottom: none;
+}
+
+.jqs-grid-line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background: #eee;
+}
+
+.jqs-grid-hour {
+    position: absolute;
+    top: -7px;
+    left: -50px;
+    display: block;
+    width: 42px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.jqs-day {
+    width: 100%;
+    height: 960px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.jqs-day-remove {
+    bottom: 20px;
+    right: 2px;
+}
+
+.jqs-day-duplicate {
+    bottom: 4px;
+    right: 2px;
+}
+
+.jqs-period {
+    position: absolute;
+    width: 100%;
+    min-height: 10px;
+}
+
+.jqs-period:hover .jqs-period-remove,
+.jqs-period:hover .jqs-period-duplicate {
+    display: block;
+}
+
+.jqs-period-15:hover .jqs-period-remove,
+.jqs-period-15:hover .jqs-period-duplicate,
+.jqs-period-15 .jqs-period-time,
+.jqs-period-15 .jqs-period-title {
+    display: none;
+}
+
+.jqs-period-30 .jqs-period-title {
+    display: none;
+}
+
+.jqs-period-time,
+.jqs-period-title {
+    display: block;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: -0.5px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.jqs-period-time {
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.jqs-period-container {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    padding: 0 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.jqs-period-helper {
+    position: absolute;
+    width: 100%;
+    min-height: 10px;
+}
+
+.jqs-period-helper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background-color: rgba(50, 50, 50, 0.1);
+}
+
+.jqs-period-helper-time {
+    padding: 2px 0 0 5px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #666;
+}
+
+.jqs-period-remove {
+    bottom: 2px;
+    right: 2px;
+}
+
+.jqs-period-duplicate {
+    bottom: 2px;
+    right: 16px;
+}
+
+.jqs-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+.jqs-options-time {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #000;
+}
+
+.jqs-options-title {
+    width: 220px;
+    font-size: 11px;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 16px;
+    margin-right: 36px;
+}
+
+.jqs-options-color {
+    display: inline-block;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    height: 25px;
+    font-size: 11px;
+    margin-bottom: 16px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.jqs-options-duplicate,
+.jqs-options-remove {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #f5f5f5;
+    color: #444;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.jqs-options-duplicate:hover,
+.jqs-options-remove:hover {
+    background: #e5e5e5;
+    color: #333;
+}
+
+.jqs-options-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.jqs-options-close:before,
+.jqs-options-close:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 4px;
+    background: #000;
+}
+
+.jqs-options-close:before {
+    transform: rotate(45deg);
+}
+
+.jqs-options-close:after {
+    transform: rotate(-45deg);
+}
+
+
+/* kadugtong */
+
+
+/**
+ * jQuery Schedule v2.2.0
+ * https://github.com/Yehzuna/jquery-schedule
+ * Thomas BORUSZEWSKI <yehzuna@outlook.com>
+ */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+    font-family: system, -apple-system, Roboto, Helvetica Neue, Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jqs-demo {
+    min-width: 600px;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+pre {
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ddd;
+}
+
+pre.large {
+    height: 500px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+}
