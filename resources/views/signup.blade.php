@@ -56,13 +56,9 @@
                 <div class="form-group2a">
                     <select class="custom-select mr-sm-2" name="section" required>
                         <option value="" disabled selected>Course</option>
-                        <option value="BET-COET-NS-1B">BET-COET-NS-1B</option>
-                        <option value="BET-COET-NS-2A">BET-COET-NS-2A</option>
-                        <option value="BET-COET-S-2B">BET-COET-S-2B</option>
-                        <option value="BET-COET-S-3A">BET-COET-S-3A</option>
-                        <option value="BET-COET-NS-3B">BET-COET-NS-3B</option>
-                        <option value="BET-COET-S-4A">BET-COET-S-4A</option>
-                        <option value="BET-COET-NS-4B">BET-COET-NS-4B</option>
+                        <option value="BS in Statistics">BS in Statistics</option>
+                        <option value="BS in Mathematics">BS in Mathematics</option>
+                        <option value="BS in Information and Technology">BS in IT</option>
                     </select>
                 </div>
 
@@ -72,6 +68,7 @@
                 <div class="form-group2">
                     <input type="email" class="form-control" placeholder="Email" name="email" required>
                 </div>
+                
                 <div class="form-group2a">
                     <select class="custom-select mr-sm-2" name="yearAndSection" required>
                         <option value="" disabled selected>Year and Section</option>

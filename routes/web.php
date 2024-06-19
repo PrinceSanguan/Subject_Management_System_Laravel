@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SignupController;
+use App\Http\Controllers\StudentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/', [LoginController::class, 'index'])->name('login');
 
 Route::get('signup', [SignupController::class, 'index'])->name('signup');
 
+Route::get('student/profile', [StudentController::class, 'index'])->name('student.profile');
