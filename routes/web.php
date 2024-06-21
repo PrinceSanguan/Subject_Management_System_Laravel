@@ -34,7 +34,7 @@ Route::get('admin/adding', [AdminController::class, 'adding'])->name('admin.addi
 Route::get('admin/dropping', [AdminController::class, 'dropping'])->name('admin.dropping');
 Route::get('admin/transfer', [AdminController::class, 'transfer'])->name('admin.transfer');
 
-Route::get('adaa/profile', [AdaaController::class, 'index'])->name('admin.profile');
-Route::get('adaa/adding', [AdaaController::class, 'adding'])->name('admin.adding');
-Route::get('adaa/dropping', [AdaaController::class, 'dropping'])->name('admin.dropping');
-Route::get('adaa/transfer', [AdaaController::class, 'transfer'])->name('admin.transfer');
+Route::get('adaa/profile', [AdaaController::class, 'index'])->name('adaa.profile');
+Route::get('adaa/adding', [AdaaController::class, 'adding'])->name('adaa.adding');
+Route::get('adaa/dropping', [AdaaController::class, 'dropping'])->name('adaa.dropping');
+Route::get('adaa/transfer', [AdaaController::class, 'transfer'])->name('adaa.transfer');
