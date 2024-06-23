@@ -71,7 +71,7 @@
 
                 <form action="/changestudentinfo" method="post">
                     <div class="form-group">
-                        <label for="studID">Access ID:</label>
+                        <label for="studID">Student ID:</label>
                         <input type="text" class="form-control" id="studID" name="studID" value="" readonly>
                     </div>
                     <div class="form-group">
