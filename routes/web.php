@@ -6,6 +6,8 @@ use App\Http\Controllers\SignupController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdaaController;
+use App\Http\Controllers\DepartmentHeadController;
+use App\Http\Controllers\PicController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +40,14 @@ Route::get('adaa/profile', [AdaaController::class, 'index'])->name('adaa.profile
 Route::get('adaa/adding', [AdaaController::class, 'adding'])->name('adaa.adding');
 Route::get('adaa/dropping', [AdaaController::class, 'dropping'])->name('adaa.dropping');
 Route::get('adaa/transfer', [AdaaController::class, 'transfer'])->name('adaa.transfer');
+
+Route::get('department-head/profile', [DepartmentHeadController::class, 'index'])->name('department-head.profile');
+Route::get('department-head/subject', [DepartmentHeadController::class, 'subject'])->name('department-head.subject');
+Route::get('department-head/logs', [DepartmentHeadController::class, 'logs'])->name('department-head.logs');
+Route::get('department-head/adding', [DepartmentHeadController::class, 'adding'])->name('department-head.adding');
+Route::get('department-head/dropping', [DepartmentHeadController::class, 'dropping'])->name('department-head.dropping');
+Route::get('department-head/transfer', [DepartmentHeadController::class, 'transfer'])->name('department-head.transfer');
+
+Route::get('pic/profile', [PicController::class, 'index'])->name('pic.profile');
+Route::get('pic/adding', [PicController::class, 'adding'])->name('pic.adding');
+Route::get('pic/request', [PicController::class, 'request'])->name('pic.request');
