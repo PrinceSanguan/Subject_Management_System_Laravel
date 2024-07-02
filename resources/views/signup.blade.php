@@ -31,17 +31,26 @@
         <img class="mb4" src="{{ asset('images/tuplogo.png') }}" alt="tuplogo" width="100" height="100">
         <h1 class="create">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES-CAVITE CAMPUS</h1>
         <h1 class="manage">ADDING, DROPPING and TRANSFERRING the SUBJECT all in one place</h1>
-        <form name="signup_form" action="">
+
+<!---------------------------Registration Form ------------------------------------->
+        <form action="{{route('register')}}" method="post">
+            @csrf
             <div class="formGroup1">
 
                 <div class="form-group1">
                     <input type="text" class="form-control" name="firstName"
                         placeholder="First name" required>
+                 @error('firstName')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
 
                 <div class="form-group1a">
                     <input type="text" class="form-control" name="lastName"
                         placeholder="Last name" required>
+                 @error('lastName')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
 
             </div>
@@ -51,6 +60,9 @@
                 <div class="form-group2">
                     <input type="text" class="form-control" name="studentNumber"
                         placeholder="TUPC-XX-XXXX" required>
+                 @error('studentNumber')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
 
                 <div class="form-group2a">
@@ -59,6 +71,9 @@
                         <option value="A">A</option>
                         <option value="B">B</option>
                     </select>
+                  @error('section')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
 
             </div>
@@ -66,39 +81,44 @@
             <div class="formGroup2">
                 <div class="form-group2">
                     <input type="email" class="form-control" placeholder="Gsfe Email" name="email" required>
+                  @error('email')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
                 
                 <div class="form-group2a">
                     <input type="text" class="form-control" placeholder="Year: Ex. 2017" name="year" required>
+                  @error('fyear')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
             </div>
 
             <div class="form-group" style="display: grid; row-gap: 10px;">
 
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Course: Ex: BET-COET" required>
+                    <input type="text" class="form-control" name="course" placeholder="Course: Ex: BET-COET" required>
+                  @error('course')
+                    <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
 
                 <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Password" minlength="6"
-                        required>
-                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">
-                        <i class="fas fa-eye"></i>
-                    </button>
+                    <input type="password" name="password" class="form-control" placeholder="Password" required>
                 </div>
+                @error('password')<div class="text-danger">{{ $message }}</div>@enderror
 
                 <div class="input-group">
-                    <input type="password" class="form-control" placeholder="Confirm Password"
-                        minlength="6" required>
-                    <button type="button" class="btn btn-outline-secondary" id="toggleConfirmPassword">
-                        <i class="fas fa-eye"></i>
-                    </button>
+                    <input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required>
                 </div>
+                @error('password_confirmation')<div class="text-danger">{{ $message }}</div>@enderror
 
             </div>
 
             <input class="signup" type="submit" value="SUBMIT">
         </form>
+<!---------------------------Registration Form ------------------------------------->
+
     </main>
 
     <!-- JavaScript -->

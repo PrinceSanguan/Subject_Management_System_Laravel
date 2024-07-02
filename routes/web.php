@@ -24,6 +24,10 @@ use App\Http\Controllers\PicController;
 Route::get('/', [LoginController::class, 'index'])->name('login');
 
 Route::get('signup', [SignupController::class, 'index'])->name('signup');
+Route::post('signup', [SignupController::class, 'register'])->name('register');
+
+Route::get('verify', [SignupController::class, 'verify'])->name('verify');
+Route::post('verify', [SignupController::class, 'verifyOtp'])->name('verify.otp');
 
 Route::get('student/profile', [StudentController::class, 'index'])->name('student.profile');
 Route::get('student/adding', [StudentController::class, 'adding'])->name('student.adding');
