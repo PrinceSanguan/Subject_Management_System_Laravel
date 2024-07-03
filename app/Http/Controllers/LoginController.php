@@ -16,11 +16,7 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'email' => [
-                'required',
-                'email'
-                // 'regex:/^[a-zA-Z0-9._%+-]+@gsfe\.tupcavite\.edu\.ph$/'
-            ],
+            'email' => 'required',
             'password' => 'required'
         ]);
 
