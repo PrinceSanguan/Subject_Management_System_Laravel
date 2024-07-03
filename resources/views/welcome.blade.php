@@ -59,8 +59,9 @@
         </script>
         @endif
 
-        <form action="{{ route('student.profile') }}" method='get'>
-
+        <!-----------------------------------LOGIN FORM------------------------------------------------------------>
+        <form action="{{ route('login.form') }}" method="post">
+            @csrf
             <img class="mb4" src="{{asset('images/tuplogo.png')}}" alt="tuplogo" width="100" height="100">
             <h1 class="tup-label">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES</h1>
             <h1 class="assist-label">ASSIST</h1>
@@ -68,7 +69,7 @@
 
             <div class="inputs">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="username" id="username" aria-describedby="emailHelp" placeholder="Username/Email" required>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Gsfe Account" required>
                 </div>
 
                 <div class="form-group">
@@ -77,12 +78,11 @@
                         <span><i class="bi bi-eye-slash" id="togglePassword" style="font-size: 28px; margin-top: -50px; margin-left: -50px; cursor: pointer;"></i></span>
                     </div>
 
-
                 </div>
             </div>
             <input class="login" type="submit" name="login" value="Login">
-
         </form>
+        <!-----------------------------------LOGIN FORM------------------------------------------------------------>
 
     </div>
 

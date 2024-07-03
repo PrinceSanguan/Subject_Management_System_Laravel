@@ -56,7 +56,7 @@
                       <a class="nav-link" href="{{route('student.transfer')}}" id="">Transfer</a>
                   </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" id="logoutbutton">Logout</a>
+                        <a class="nav-link" href="{{route('logout')}}" id="logoutbutton">Logout</a>
                     </li>
                 </ul>
             </form>

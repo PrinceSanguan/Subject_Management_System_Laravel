@@ -9,6 +9,10 @@ use App\Http\Controllers\AdaaController;
 use App\Http\Controllers\DepartmentHeadController;
 use App\Http\Controllers\PicController;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +26,7 @@ use App\Http\Controllers\PicController;
 
 
 Route::get('/', [LoginController::class, 'index'])->name('login');
+Route::post('/', [LoginController::class, 'login'])->name('login.form');
 
 Route::get('signup', [SignupController::class, 'index'])->name('signup');
 Route::post('signup', [SignupController::class, 'register'])->name('register');
@@ -29,10 +34,14 @@ Route::post('signup', [SignupController::class, 'register'])->name('register');
 Route::get('verify', [SignupController::class, 'verify'])->name('verify');
 Route::post('verify', [SignupController::class, 'verifyOtp'])->name('verify.otp');
 
+Route::middleware(['auth'])->group(function () {
 Route::get('student/profile', [StudentController::class, 'index'])->name('student.profile');
 Route::get('student/adding', [StudentController::class, 'adding'])->name('student.adding');
 Route::get('student/dropping', [StudentController::class, 'dropping'])->name('student.dropping');
 Route::get('student/transfer', [StudentController::class, 'transfer'])->name('student.transfer');
+});
+
+
 
 Route::get('admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
 Route::get('admin/account', [AdminController::class, 'account'])->name('admin.account');
@@ -55,3 +64,12 @@ Route::get('department-head/transfer', [DepartmentHeadController::class, 'transf
 Route::get('pic/profile', [PicController::class, 'index'])->name('pic.profile');
 Route::get('pic/adding', [PicController::class, 'adding'])->name('pic.adding');
 Route::get('pic/request', [PicController::class, 'request'])->name('pic.request');
+
+/******************************************** This Route is For Logout *****************************/
+Route::get('/logout', function (Request $request) {
+  Session::flush();
+  Auth::logout();
+
+  return redirect()->route('login');
+})->name('logout');
+/******************************************** This Route is For Logout *****************************/
