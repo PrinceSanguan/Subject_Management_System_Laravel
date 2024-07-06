@@ -36,6 +36,10 @@ Route::post('verify', [SignupController::class, 'verifyOtp'])->name('verify.otp'
 
 Route::middleware(['auth'])->group(function () {
 Route::get('student/profile', [StudentController::class, 'index'])->name('student.profile');
+Route::post('student/profile', [StudentController::class, 'changeInfo'])->name('change.info');
+Route::post('student/profile/changepassword', [StudentController::class, 'changePassword'])->name('change.password');
+
+
 Route::get('student/adding', [StudentController::class, 'adding'])->name('student.adding');
 Route::get('student/dropping', [StudentController::class, 'dropping'])->name('student.dropping');
 Route::get('student/transfer', [StudentController::class, 'transfer'])->name('student.transfer');

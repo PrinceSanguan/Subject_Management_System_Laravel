@@ -75,18 +75,19 @@
                     <div class="innerStudentDetails">
                         <div class="lagayan1">
                             <p id="p1">Name:</p>
-                            <p style="text-align: end;"></p>
+                            <p style="text-align: end;">{{$user->firstName}} {{$user->lastName}}</p>
                         </div>
                         <div class="lagayan2">
                             <p id="p1">Student Number:</p>
-                            <p style="text-align: end;"></p>
+                            <p style="text-align: end;">{{$user->studentNumber}}</p>
                         </div>
                         <div class="lagayan3">
                             <p id="p1">Year Course and Section:</p>
-                            <p style="text-align: end;"></p>
+                            <p style="text-align: end;">{{$user->year}} {{$user->course}} {{$user->section}}</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="progressbox">
                     <div class="lagayanNgStatus">
                         <p id="p1">Status:</p>
