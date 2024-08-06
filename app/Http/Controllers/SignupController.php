@@ -33,8 +33,8 @@ class SignupController extends Controller
             'email' => [
                 'required',
                 'email',
-                'unique:users',
-                'regex:/^[a-zA-Z0-9._%+-]+@gsfe\.tupcavite\.edu\.ph$/'
+                'unique:users'/* , */
+                /* 'regex:/^[a-zA-Z0-9._%+-]+@gsfe\.tupcavite\.edu\.ph$/' */
             ],
             'year' => 'required|digits:4',
             'course' => 'required',
@@ -54,7 +54,7 @@ class SignupController extends Controller
             'email.required' => 'Email is required.',
             'email.email' => 'Email must be a valid email address.',
             'email.unique' => 'Email has already been taken.',
-            'email.regex' => 'Email must be a valid gsfe.tupcavite.edu.ph address.',
+            /* 'email.regex' => 'Email must be a valid gsfe.tupcavite.edu.ph address.', */
             'year.required' => 'Year is required.',
             'year.digits' => 'Year must be a 4-digit number.',
             'course.required' => 'Course is required.',

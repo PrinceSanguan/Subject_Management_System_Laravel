@@ -98,7 +98,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'Jheremynick.ituralde@gsfe.tupcavite.edu.ph'),
+        'address' => env('MAIL_FROM_ADDRESS', 'kylamae.merano@gsfe.tupcavite.edu.ph'),
         'name' => env('MAIL_FROM_NAME', 'Your App Name'),
     ],
 
